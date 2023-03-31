@@ -1,11 +1,20 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  const numbersSeen = new Set();
+
+  for (number of array) {
+    const diff = target - number;
+
+    if (numbersSeen.has(diff)) {
+      return true;
+    }
+    numbersSeen.add(number);
+  }
+  return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
-*/
-
+O(n)
 /* 
   Add your pseudocode here
 */
